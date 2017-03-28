@@ -13,6 +13,14 @@ export default class AccountDelete extends Component {
     You can use this technique with update() to delete multiple children in a single API call.*/
     //TODO implement account deletion async function
 
+  async accountDelete() {
+      const user = firebase.auth().currentUser;
+
+      user.delete().then(Actions.login);
+          //User Account Deleted. Bye Felicia.
+      //TODO test method
+  }
+
   render() {
     return (
       <Container style={{ backgroundColor: 'white' }}>
