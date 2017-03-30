@@ -5,6 +5,7 @@ import { Actions } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { getPlatformValue } from '../utils';
 
+//TODO implement more settings features
 
 export default class Settings extends Component {
   render() {
